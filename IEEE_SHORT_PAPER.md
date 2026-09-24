@@ -9,9 +9,11 @@ jlgrefaa@uea.edu.ec
 RESUMEN (ABSTRACT)
 El sector de la comercialización minorista de libros enfrenta desafíos significativos debido a los cambios en los hábitos de consumo y la competencia digital. Este artículo presenta la implementación de un pipeline completo de minería de datos aplicado sobre la base de datos transaccional (N = 6,100 registros) de un punto de venta (POS) de una librería comercial. Se aplicaron técnicas de preprocesamiento, auditoría de calidad de datos, ingeniería de características e implementación de modelos de aprendizaje supervisado (Regresión Logística, Árboles de Decisión y Random Forest) para predecir el abandono de clientes (Customer Churn). El modelo Random Forest obtuvo el mejor desempeño con un Accuracy del 82.8% y un área bajo la curva ROC (AUC-ROC) de 0.864. Los resultados demuestran que la recencia de compra y el ticket promedio son determinantes clave para la retención.
 Palabras Clave— Minería de datos, Customer Churn, Random Forest, Sistema POS, Librería Comercial, IEEE Short Paper.
+
 I. INTRODUCCIÓN
 En el entorno comercial actual, la retención de clientes es considerablemente más rentable que la adquisición de nuevos usuarios. En el contexto de las librerías comerciales, comprender los patrones de consumo permite optimizar la gestión de inventario por categorías bibliográficas (ej. Literatura, Matemáticas, Ciencias) y diseñar campañas de fidelización personalizadas.
 El objetivo de este trabajo es desarrollar un modelo predictivo mediante técnicas de minería de datos para identificar a los clientes con mayor probabilidad de abandono (cliente_abandonó = 1) a partir del historial transaccional de un sistema de facturación POS.
+
 II. METODOLOGÍA
 A. Arquitectura del Dataset y Preprocesamiento
 Se analizó una muestra representativa de 6,100 facturas comerciales procesadas en el sistema de ventas. El dataset incluye 9variables estructurales:
